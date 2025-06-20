@@ -9,7 +9,7 @@ The x-axis displays the code name of each unique OTU (Operational Taxonomic Unit
 The y-axis indicates the number of DNA sequences found for a given OTU, which reflects how abundant the particular microbe is in the sample. For example, a bar
 reading "163 OTU 1167" means 163 DNA sequences for microbe 1167 were found. Also revealed in the hover text are names such as "Bacteria; Bacteroidetes; Bacteroidia; Bacteroidales; Bacteroidaceae; Bacteroides", which is the microbe's taxonomic lineage, or "family tree."
 
-Bubble Chart 
+Bubble Chart   
 The bubble chart below the bar chart also visualizes the presence and prevalence of OTUs per test subject, but displays all OTU codes (not only the top 10) across
 the x-axis. The numbers of DNA sequences present per microbe - the abundance of that microbe - are indicated on the y-axis and in the relative size of each bubble.
 Taxonomy is revealed in the hover text. Note that bubbles of similar color do not represent the same, or even taxonomically similar, microbes. Colors are simply reused
