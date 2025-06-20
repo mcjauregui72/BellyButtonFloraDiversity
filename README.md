@@ -1,15 +1,19 @@
-# BellyButtonFloraDiversity
+# BellyButtonFloraDiversity  
+  
+The app.js, index.html, and samples.json files in this repository create an interactive dashboard to explore the Belly Button Biodiversity dataset. This dataset catalogs
+the diverse array of microbes that colonize human navels. The interactive aspect of the tool is the dropdown menu in the top-left corner of the screen. For each test subject, identified by Test Subject ID No., the dashboard updates to display demographic information about the subject (e.g., age, gender, washing frequency). Along with this demographic information, corresponding bar and bubble charts update to visualize the types and amounts of bacteria present in the subject's microbial sample. 
+  
+Bar Chart  
+The bar chart to the right of the Demographic Info displays the top 10 microbes found in the subject's sample, in descending order of prevalence. 
+The x-axis displays the code name of each unique OTU (Operational Taxonomic Unit, representing a specific type of microbe) present. 
+The y-axis indicates the number of DNA sequences found for a given OTU, which reflects how abundant the particular microbe is in the sample. For example, a bar
+reading "163 OTU 1167" means 163 DNA sequences for microbe 1167 were found. Also revealed in the hover text are names such as "Bacteria; Bacteroidetes; Bacteroidia; Bacteroidales; Bacteroidaceae; Bacteroides", which is the microbe's taxonomic lineage, or "family tree."
 
-The app.js, index.html, and samples.json files in this repository create an interactive dashboard to explore the Belly Button Biodiversity dataset, which catalogs
-the microbes that colonize human navels. The dashboard visualizes the microbial diversity found in human belly buttons. The interactive aspect of the tool is the 
-dropdown menu in the top-left corner of the screen. For each test subject, identified by Test Subject ID No., the dashboard updates to display demographic information
-about the test subject (e.g., age, gender, washing frequency). Along with this demographic information, corresponding bar and bubble charts visualize the types and 
-amounts of bacteria present in the subject's microbial sample. 
-
-
-Top bacterial species: Shows the most prevalent bacterial species (operational taxonomic units or OTUs) found in the selected sample, often via a pie chart or bar chart. 
-Bubble chart: Visualizes the OTUs and their corresponding abundance in the sample. 
-Gauge chart: Displays the weekly washing frequency of the individual. 
+Bubble Chart 
+The bubble chart below the bar chart also visualizes the presence and prevalence of OTUs per test subject, but displays all OTU codes (not only the top 10) across
+the x-axis. The numbers of DNA sequences present per microbe - the abundance of that microbe - are indicated on the y-axis and in the relative size of each bubble.
+Taxonomy is revealed in the hover text. Note that bubbles of similar color do not represent the same, or even taxonomically similar, microbes. Colors are simply reused
+due to the larger number of microbes than perceptably distinct colors in the graphing pallet. 
 
 The dataset reveals that a small handful of microbial species (also called operational taxonomic units, or OTUs, in the study) were present in more 
 than 70% of people, while the rest were relatively rare.
