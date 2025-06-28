@@ -1,10 +1,12 @@
 
-//Instead of importing data from url, reference samples.json file saved in repository
+//Instead of importing data from url, reference samples.json file saved in repository root
+//which is recommended to make dashboard self-contained when using Pages 
 //Define urlData for import file
 //const urlData = "https://static.bc-edx.com/data/dl-1-2/m14/lms/starter/samples.json";
-const urlData = "samples.json"
 
-//Promise pending for json data from urlData 
+const urlData = "samples.json";
+
+//No promise pending for json data from urlData since samples.json saved in repo root
 //const dataPromise = d3.json(urlData);
   //console.log("Data promise: ", dataPromise);
 
