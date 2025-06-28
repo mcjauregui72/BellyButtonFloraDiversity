@@ -1,7 +1,8 @@
 
-
+//Instead of importing data from url, reference samples.json file saved in repository
 //Define urlData for import file
 //const urlData = "https://static.bc-edx.com/data/dl-1-2/m14/lms/starter/samples.json";
+const urlData = "samples.json"
 
 //Promise pending for json data from urlData 
 //const dataPromise = d3.json(urlData);
