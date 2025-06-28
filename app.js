@@ -1,12 +1,11 @@
-//Assistance with function definition and syntax throughout provided by XpertLearning Assistant 
-//(https://bootcampspot.instructure.com/courses/4981/external_tools/313) and Mychele Larson
+
 
 //Define urlData for import file
 //const urlData = "https://static.bc-edx.com/data/dl-1-2/m14/lms/starter/samples.json";
 
 //Promise pending for json data from urlData 
-const dataPromise = d3.json(urlData);
-  console.log("Data promise: ", dataPromise);
+//const dataPromise = d3.json(urlData);
+  //console.log("Data promise: ", dataPromise);
 
 //How to update content of sample-metadata element on webpage: 
 //Define 'metaData' function to take meta_data as parameter
