@@ -14,20 +14,23 @@ const urlData = "samples.json";
 //Assign 'meta_data' value of 'metadata' key inside json data (portion denoted by 'data.metadata')
 //Define 'meta_data' as variable holding 'sample-metadata' retrieved from json
 //Select html element with div id="sample-metadata" and save to demSelect variable 
-    function metaData(meta_data) {
-    let demSelect = d3.select("#sample-metadata");
-//Replace demSelect variable content with new content (sample-metadata) to show actual demographic data  
-//Use demSelect.html() template literals to interpolate meta_data's values
-    demSelect.html(
-        `id: ${meta_data.id} <br>
-        ethnicity: ${meta_data.ethnicity} <br>
-        gender: ${meta_data.gender} <br>
-        age: ${meta_data.age} <br>
-        location: ${meta_data.location} <br>
-        bbtype: ${meta_data.bbtype} <br>
-        wfreq: ${meta_data.wfreq}`
-    );
-}
+
+//Define 'metaDataFunc' to take 'demographicInfo' as parameter 
+//Select "sample-metadata" element from html and save as 'demSelect'
+//Reset 'demSelect' content to 'demographicInfo' template string representing characteristics of selected trial participant's demographic info
+    function metaDataFunc(demographicInfo) {     
+      let demSelect = d3.select("#sample-metadata")
+      demSelect.html(
+        `id: ${demographicInfo.id} <br>
+        ethnicity: ${demographicInfo.ethnicity} <br>
+        gender: ${demographicInfo.gender} </br>
+        age: ${demographicInfo.age} <br>
+        location: ${demographicInfo.location} <br>
+        bbtype: ${demographicInfo.bbtype} </br>
+        wfreq: ${demographicInfo.wfreq}`  
+      );
+    }
+
 
 // Define 'samples' and 'meta_data' variable in scope accessible to all functions (ie., outside the .then() function)
 var samples;
@@ -82,22 +85,7 @@ d3.json(urlData)
     bubbleChartFunc(selectedId);
     }
 
-    //Define 'metaDataFunc' to take 'demographicInfo' as parameter 
-    function metaDataFunc(demographicInfo) {
-      //Select "sample-metadata" element from html and save as 'demSelect2'
-      let demSelect2 = d3.select("#sample-metadata")
-      //Reset 'demSelect2' content to 'demographicInfo' template string representing
-      //characteristics of selected trial participant's demographic info
-      demSelect2.html(
-        `id: ${demographicInfo.id} <br>
-        ethnicity: ${demographicInfo.ethnicity} <br>
-        gender: ${demographicInfo.gender} </br>
-        age: ${demographicInfo.age} <br>
-        location: ${demographicInfo.location} <br>
-        bbtype: ${demographicInfo.bbtype} </br>
-        wfreq: ${demographicInfo.wfreq}`  
-      );
-    }
+
 
     //For trial participant in question, define and create bar chart that displays top ten 'sample_values' in reverse order
     function barChartFunc(selectedId) {
