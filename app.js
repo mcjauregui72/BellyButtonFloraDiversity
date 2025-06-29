@@ -153,4 +153,39 @@ d3.json(urlData)
         },
       };
       Plotly.newPlot("bubble",chart, layout);
+
+    function gaugeChartFunc(demographicInfo) {
+      let wfreq = demographicInfo.wfreq;
+
+  let data = [{
+    domain: { x: [0, 1], y: [0, 1] },
+    value: wfreq,
+    title: { text: "Belly Button Washing Frequency<br><sub>Scrubs per Week</sub>" },
+    type: "indicator",
+    mode: "gauge+number",
+    gauge: {
+      axis: { range: [0, 9], tickwidth: 1, tickcolor: "darkgray" },
+      bar: { color: "darkblue" },
+      steps: [
+        { range: [0, 1], color: "#f8f3ec" },
+        { range: [1, 2], color: "#f4f1e4" },
+        { range: [2, 3], color: "#e9e6ca" },
+        { range: [3, 4], color: "#e5e7b4" },
+        { range: [4, 5], color: "#d5e599" },
+        { range: [5, 6], color: "#b7cc92" },
+        { range: [6, 7], color: "#8cbf88" },
+        { range: [7, 8], color: "#8abb8f" },
+        { range: [8, 9], color: "#85b48a" }
+      ],
+    }
+  }];
+
+  let layout = {
+    width: 400,
+    height: 300,
+    margin: { t: 20, b: 40, l: 50, r: 50 }
+  };
+
+  Plotly.newPlot("gauge", data, layout);
+}  
     }
