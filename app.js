@@ -61,10 +61,11 @@ d3.json(urlData)
     selector.append("option").text(id).property("value", id);  
         });
 
-    //Call all three charts and pass first element of 'meta_data' and 'samples' arrays as arguments    
+    //Call all charts and pass first element of 'meta_data' and 'samples' arrays as arguments    
       metaDataFunc(meta_data[0]);
       barChartFunc(samples[0]);
       bubbleChartFunc(samples[0]);
+      gaugeChartFunc(meta_data[0]);
   });
 
     //'value' is value of selected option in dropdown menu
@@ -82,6 +83,7 @@ d3.json(urlData)
     barChartFunc(selectedId);
     //Bubble chart
     bubbleChartFunc(selectedId);
+    gaugeChartFunc(demographicInfo);  
     }
 
     //For trial participant in question, define and create bar chart that displays top ten 'sample_values' in reverse order
