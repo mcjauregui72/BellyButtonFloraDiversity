@@ -31,8 +31,7 @@ const urlData = "samples.json";
       );
     }
 
-
-// Define 'samples' and 'meta_data' variable in scope accessible to all functions (ie., outside the .then() function)
+// Define 'samples' and 'meta_data' variable in scope accessible to all functions (ie., outside .then() function)
 var samples;
 var meta_data;
 
@@ -84,8 +83,6 @@ d3.json(urlData)
     //Bubble chart
     bubbleChartFunc(selectedId);
     }
-
-
 
     //For trial participant in question, define and create bar chart that displays top ten 'sample_values' in reverse order
     function barChartFunc(selectedId) {
