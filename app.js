@@ -124,13 +124,14 @@ d3.json(urlData)
     //'sample_values' for  marker size, 'otu_ids' for marker colors, 
     //'otu_labels' for text values
     function bubbleChartFunc(selectedId) {
+      console.log("Bubble Chart Data:", selectedId);
       let x_axis = selectedId.otu_ids;
       let y_axis = selectedId.sample_values;
       let marker_size = selectedId.sample_values;
       let color = selectedId.otu_ids;
       let text = selectedId.otu_labels;
 
-      bubble = {
+      let bubble = {
         x: x_axis,
         y: y_axis,
         text: text,
