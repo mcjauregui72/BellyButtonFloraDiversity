@@ -3,7 +3,7 @@
 🌐 **Live site:**  
 [https://mcjauregui72.github.io/BellyButtonFloraDiversity/](https://mcjauregui72.github.io/BellyButtonFloraDiversity/)
 
-This project builds an interactive dashboard to explore the Belly Button Biodiversity dataset, which catalogs the microbes that colonize human navels.
+This project builds an interactive dashboard to explore the Belly Button Biodiversity dataset, which catalogs the microbes that colonize human navels. The dataset is available at https://static.bc-edx.com/data/dl-1-2/m14/lms/starter/samples.json.
 
 The dataset reveals that a small handful of microbial species (also called operational taxonomic units, or OTUs, in the study) were present in more than 70% of people, while the rest were relatively rare.
 
