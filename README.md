@@ -14,3 +14,5 @@ Create a horizontal bar chart with a dropdown menu to display the top 10 OTUs fo
 Create a gauge chart that displays the individual's weekly wash frequency.  
 Create a bubble chart that displays each sample.  
 Update all the plots when a new sample is selected.  
+
+<img width="521" alt="BellyButtonDashboard" src="https://github.com/user-attachments/assets/a1b12d1a-71ed-4a1a-b212-a753bf914061" />
