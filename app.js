@@ -173,8 +173,8 @@ d3.json(urlData)
 
   let layout = {
     width: 400,
-    height: 300,
-    margin: { t: 20, b: 40, l: 50, r: 50 }
+    height: 350,
+    margin: { t: 60, b: 40, l: 50, r: 50 }
   };
 
   Plotly.newPlot("gauge", data, layout);
